@@ -153,6 +153,11 @@ HOME - ATF CSS
 
 #ATF img {width: 100%;}
 
+#ATF .col-md-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #buttons {
   text-align: center;
   padding-top: 20px;
