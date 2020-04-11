@@ -44,68 +44,121 @@
       </div>
     </div>
     <div id="contactUs">
-      <div id="forms" class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Contact Us Today</h1>
+      <div id="contactContainer">
+        <div id="forms" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Contact Us Today</h1>
+            </div>
+            <div id="customerForm" class="col-md-6">
+              <div class="formOptions">
+                <img src="imgs/customer-support-icon.png" alt="customer-support-icon">
+                <button id="customerSupportBtn" class="primaryButton" type="button" name="button">Customer Support<br>Contact Form</button>
+              </div>
+            </div>
+            <div id="retailForm" class="col-md-6">
+              <div class="formOptions">
+                <img src="imgs/retail-and-distribution-icon.png" alt="retail-and-distribution-icon">
+                <button id="retailSupportBtn" class="primaryButton" type="button" name="button">Retail &amp; Distribution<br>Reseller Form</button>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <div class="formOptions">
-              <img src="imgs/customer-support-icon.png" alt="customer-support-icon">
-              <button class="primaryButton" type="button" name="button">Customer Support<br>Contact Form</button>
-            </div>
-            <div class="formSelected">
-              <h1>form 1</h1>
+        </div>
+        <div id="customerSupportForm">
+          <div class="container">
+            <h2>Customer Support</h2>
+            <p>PainXPro aims to provide the best Customer Support possible. Please fill out the form below and one of our caring team members will contact you shortly. Thank you!</p>
+            <form action="">
+              <div class="form-group">
+                <label class="sr-only" for="name">Full Name:</label>
+                <input type="name" class="form-control" placeholder="Who do we have the pleasure of speaking to? Please enter Full Name." id="name" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="email">Email address:</label>
+                <input type="email" class="form-control" placeholder="Please enter an email we can contact as soon as possible." id="email" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="subject">Subject:</label>
+                <input type="subject" class="form-control" placeholder="What is your message about?" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="message">Message:</label>
+                <textarea class="form-control" rows="5" placeholder="Please input your message here." id="message"></textarea>
+              </div>
+              <button class="primaryButton" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="backToOptions">
+              <h5>Go Back<br><<</h5>
             </div>
           </div>
-          <div id="retailForm" class="col-md-6">
-            <div class="formOptions">
-              <img src="imgs/retail-and-distribution-icon.png" alt="retail-and-distribution-icon">
-              <button class="primaryButton" type="button" name="button">Retail &amp; Distribution<br>Reseller Form</button>
-            </div>
-            <div class="formSelected">
-              <h1>form 2</h1>
+        </div>
+        <div id="resellerSupportForm">
+          <div class="container">
+            <h2>Retail &amp; Distribution</h2>
+            <p>If you'd like to have our products in your stores to provide your valuable customers with the #1 Triple Action Pain Relief solution, please fill out he form below, and one of our professional representatives will contact you shortly!</p>
+            <form action="">
+              <div class="form-group">
+                <label class="sr-only" for="name">Full Name:</label>
+                <input type="name" class="form-control" placeholder="Who do we have the pleasure of speaking to? Please enter Full Name." id="name" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="email">Email address:</label>
+                <input type="email" class="form-control" placeholder="Please enter an email we can contact as soon as possible." id="email" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="subject">Subject:</label>
+                <input type="subject" class="form-control" placeholder="What is your message about?" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="message">Message:</label>
+                <textarea class="form-control" rows="5" placeholder="Please input your message here." id="message"></textarea>
+              </div>
+              <button class="primaryButton" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="backToOptions">
+              <h5>Go Back<br><<</h5>
             </div>
           </div>
         </div>
       </div>
       <div id="contactInfo" class="container">
         <div class="row">
-          <div class="infoBox">
-            <div class="infoIcon">
-              <img src="imgs/clock-icon.png" alt="white-clock-icon">
+          <div id="infoContainer">
+            <div class="infoBox">
+              <div class="infoIcon">
+                <img src="imgs/clock-icon.png" alt="white-clock-icon">
+              </div>
+              <div class="infoCopy">
+                <h4>Hours of Operation:</h4>
+                <p>Mon - Fri : 8am - 7pm PST<br>Sat - Sun : 8am - 6pm PST</p>
+              </div>
             </div>
-            <div class="infoCopy">
-              <h4>Hours of Operation:</h4>
-              <p>Monday - Friday : 8am - 7pm PST</p>
-              <p>Saturday - Sunday : 8am - 6pm PST</p>
+            <div class="infoBox">
+              <div class="infoIcon">
+                <img src="imgs/email-icon.png" alt="white-email-icon">
+              </div>
+              <div class="infoCopy">
+                <h4>Email:</h4>
+                <p>info@painxpro.com</p>
+              </div>
             </div>
-          </div>
-          <div class="infoBox">
-            <div class="infoIcon">
-              <img src="imgs/email-icon.png" alt="white-email-icon">
+            <div class="infoBox">
+              <div class="infoIcon">
+                <img src="imgs/phone-icon.png" alt="white-phone-icon">
+              </div>
+              <div class="infoCopy">
+                <h4>Phone #:</h4>
+                <p>888.833.3532</p>
+              </div>
             </div>
-            <div class="infoCopy">
-              <h4>Email:</h4>
-              <p>info@painxpro.com</p>
-            </div>
-          </div>
-          <div class="infoBox">
-            <div class="infoIcon">
-              <img src="imgs/phone-icon.png" alt="white-phone-icon">
-            </div>
-            <div class="infoCopy">
-              <h4>Phone #:</h4>
-              <p>888.833.3532</p>
-            </div>
-          </div>
-          <div class="infoBox">
-            <div class="infoIcon">
-              <img src="imgs/gps-icon.png" alt="white-gps-icon">
-            </div>
-            <div class="infoCopy">
-              <h4>Address:</h4>
-              <p>16501 Ventura Blvd Suite 400 Encino, CA 91436</p>
+            <div class="infoBox">
+              <div class="infoIcon">
+                <img src="imgs/gps-icon.png" alt="white-gps-icon">
+              </div>
+              <div class="infoCopy">
+                <h4>Address:</h4>
+                <p>16501 Ventura Blvd Suite 400 Encino, CA 91436</p>
+              </div>
             </div>
           </div>
         </div>
@@ -123,13 +176,13 @@
                 <a href="#">
                   <li>Pain Relief Roll On</li>
                 </a>
-                <a href="#">
+                <a href="http://www.painxprolab.com">
                   <li>Lab Results</li>
                 </a>
-                <a href="#">
+                <a href="shipping-and-return-policy.html">
                   <li>Shipping &amp; Returns</li>
                 </a>
-                <a href="#">
+                <a href="refund-policy.html">
                   <li>Refund Policy</li>
                 </a>
               </ul>
@@ -137,16 +190,16 @@
             <div class="col-md-4">
               <h3>Our Brand</h3>
               <ul>
-                <a href="#">
+                <a href="about-us.html">
                   <li>About Us</li>
                 </a>
-                <a href="#">
+                <a href="contact-us.html">
                   <li>Contact Us</li>
                 </a>
-                <a href="#">
+                <a href="terms-of-service.html">
                   <li>Terms of Service</li>
                 </a>
-                <a href="#">
+                <a href="privacy-policy.html">
                   <li>Privacy Policy</li>
                 </a>
               </ul>

@@ -17,13 +17,13 @@ html {
 Global CSS Elements
 ------------------------*/
 
-#ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1 {
+#ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
   color: var(--brand-gray-color);
   text-align: center;
   padding-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
-  font-size: 30px;
+  font-size: 20px;
   font-family: var(--brand-montserrat-fontFamily);
   font-style: normal;
   font-weight: 800;
@@ -35,7 +35,7 @@ a:hover {text-decoration: none;}
 button.primaryButton {
   background-color: var(--brand-blue-color);
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
   font-family: var(--brand-montserrat-fontFamily);
@@ -43,6 +43,7 @@ button.primaryButton {
   border-radius: 3px;
   padding: 16px 35px;
   transition: .3s;
+  width: 80%;
 }
 
 button.primaryButton:hover {
@@ -52,15 +53,15 @@ button.primaryButton:hover {
 button.secondaryButton {
   background-color: var(--brand-gray-color);
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
   font-family: var(--brand-montserrat-fontFamily);
   border: none;
   border-radius: 3px;
   padding: 16px 35px;
-  margin-left: 20px;
   transition: .3s;
+  width: 80%;
 }
 
 button.secondaryButton:hover {
@@ -71,10 +72,12 @@ button.secondaryButton:hover {
 Navigation CSS
 ------------------------*/
 
-nav.navbar a.navbar-brand img {width: 250px;}
+nav.navbar a.navbar-brand img {width: 90%;}
 
 nav button.navbar-toggler {
   border: none;
+  position: relative;
+  right: 0px;
 }
 
 nav span.icon-bar {
@@ -129,7 +132,7 @@ nav li.nav-item {
 
 nav ul.navbar-nav li.nav-item a.nav-link {
   color: var(--brand-gray-color);
-  font-family:var(--brand-montserrat-fontFamily));
+  font-family:var(--brand-montserrat-fontFamily);
   font-weight: 800;
   font-style: normal;
   transition: .3s;
@@ -162,6 +165,10 @@ HOME - ATF CSS
   text-align: center;
   padding-top: 20px;
   padding-bottom: 6em;
+}
+
+#atfContainer button.primaryButton {
+  margin-bottom: 1em;
 }
 
 /*-----------------------
@@ -198,6 +205,10 @@ HOME - Benefits CSS
   margin-top: 25px;
 }
 
+.benefitContainer .benefitBox img {
+  width: 70%;
+}
+
 .benefitContainer .benefitBox .overlay {
   position: absolute;
   z-index: 2;
@@ -212,6 +223,7 @@ HOME - Benefits CSS
 .benefitContainer .benefitBox .overlay li {padding-bottom: 15px;}
 
 .overlay .overlayContent {
+  width: 80%;
   color: #fff;
   text-align: left;
   position: absolute;
@@ -289,6 +301,7 @@ HOME - Product Carousel CSS
 
 #productsHome {
   padding-bottom: 3em;
+  padding-top: 3em;
 }
 
 #productsHome h1 {
@@ -304,6 +317,8 @@ HOME - Product Carousel CSS
   color: #000;
 }
 
+#productsHome #productsHomeCarousel .carousel-indicators {display: none;}
+
 #productsHome #productsHomeCarousel span.carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23218ece' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e")
 }
@@ -314,6 +329,7 @@ HOME - Product Carousel CSS
 
 #productsHome #productsHomeCarousel a.carousel-control-next, #productsHome #productsHomeCarousel a.carousel-control-prev {
   opacity: .7;
+  z-index: 3;
 }
 
 #productsHome #productsHomeCarousel a.carousel-control-next:hover, #productsHome #productsHomeCarousel a.carousel-control-prev:hover {
@@ -326,6 +342,7 @@ HOME - Product Carousel CSS
 
 #productsHomeCarousel .carousel-inner .carousel-caption {
   bottom: -220px;
+  z-index: 2;
 }
 
 #productsHomeCarousel .carousel-inner .carousel-caption h3 {
@@ -341,8 +358,7 @@ HOME - Product Carousel CSS
 }
 
 #productsHomeCarousel .carousel-inner img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
     display: block;
     margin: auto;
   }
@@ -385,20 +401,22 @@ HOME - Seals CSS
   transition: .3s ease-out;
 }
 
+#sealsHome .seals {width: 50%;}
+
 #sealsHome .seals img:hover {
   transform: scale(1.1);
 }
 
 #sealsContainer {
-  width: 440px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   left: 0;
-right: 0;
-margin-left: auto;
-margin-right: auto;
-  margin-top: 40px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 /*-----------------------
@@ -471,24 +489,34 @@ HOME - Footer CSS
   text-align: center;
 }
 
+#footer #footerLinks li {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 300;
+}
+
 #footer h3 {
     color: var(--brand-gray-color);
     padding-bottom: 5px;
+    font-family: var(--brand-montserrat-fontFamily);
+    font-style: normal;
+    font-weight: 600;
 }
 
 #footer ul {
   padding-left: 0px;
-  padding-bottom: 45px;
+  padding-bottom: 1em;
 }
 
 #footer ul#socialMediaList {
   display: flex;
-  width: 140px;
+  width: 70%;
   margin: 0px auto;
+  padding-bottom: 0px;
 }
 
 #footer ul#socialMediaList img {
-  width: 70px;
+  width: 90%;
   transition: .3s;
 }
 
@@ -513,12 +541,15 @@ HOME - Footer CSS
 }
 
 #footer img {
-  width: 200px;
+  width: 70%;
   padding-bottom: 10px;
 }
 
 #footer #copyright p {
   color: #adabab;
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 300;
 }
 
 #footer #footerIcons {
@@ -526,7 +557,7 @@ HOME - Footer CSS
 }
 
 #footer #footerIcons img {
-  width: 55px;
+  width: 16%;
 }
 
 #footerButton {
@@ -561,7 +592,11 @@ SHOP - Product Display CSS
   padding-bottom: 4em;
 }
 
-#productDisplay img {width: 100%;}
+#productDisplay img {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+}
 
 #productDisplay h3 {
   color: var(--brand-blue-color);
@@ -610,14 +645,193 @@ SHOP - Lab Tested CSS
 
 #labTestedContainer p {
   text-align: center;
-  padding: 10px 9%;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: var(--brand-montserrat-fontFamily);
+  font-weight: 300;
+  font-style: normal;
+}
+
+#labTestedContainer p b {
+  font-weight: 600;
 }
 
 #labTestedContainer img {
-  width: 50%;
+  width: 70%;
   margin: 0px auto;
   display: block;
   padding: 30px 0px;
+}
+
+/*-----------------------
+PRODUCT PAGE - Products CSS
+------------------------*/
+
+#productImages {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#productImages img {width: 100%;}
+
+#productImages #imageThumbnails {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#productImages #imageThumbnails img {
+  width: 25%;
+  transition: .3s;
+}
+
+#productImages #imageThumbnails img:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+#productName {
+  font-size: 30px;
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--brand-gray-color);
+}
+
+#price {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+#productBenefits {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+}
+
+#productBenefits img {width: 25%;}
+
+#productDetail .input-group {margin-bottom: 30px;}
+
+#productDetail button.primaryButton {
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 2.5em;
+}
+
+#productDetail #plus.btn-number {
+  background-color: var(--brand-blue-color);
+  color: #fff;
+  transition: .3s;
+  font-style: normal;
+  font-weight: 800;
+  font-family: var(--brand-montserrat-fontFamily);
+  border-radius: 0px 3px 3px 0px;
+}
+
+#productDetail #minus.btn-number {
+  background-color: var(--brand-blue-color);
+  color: #fff;
+  transition: .3s;
+  font-style: normal;
+  font-weight: 800;
+  font-family: var(--brand-montserrat-fontFamily);
+  border-radius: 3px 0px 0px 3px;
+}
+
+#productDetail .btn-number:hover {
+  opacity: .8;
+}
+
+/*-----------------------
+PRODUCT PAGE - Accordion CSS
+------------------------*/
+
+#accordion{
+  padding-bottom: 3em;
+}
+
+#accordion a.card-link {
+  color: var(--brand-blue-color);
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--brand-montserrat-fontFamily);
+}
+
+#accordion a.card-link[aria-expanded="true"]{
+  color: #000;;
+}
+
+#accordion p {
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--brand-montserrat-fontFamily);
+}
+
+#accordion h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--brand-montserrat-fontFamily);
+}
+
+#accordion ul li {
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--brand-montserrat-fontFamily);
+}
+
+#accordion b {
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--brand-montserrat-fontFamily);
+}
+
+#accordion .card-header {
+  background-color: var(--main-bgGray-color);
+}
+
+/*-----------------------
+PRODUCT PAGE - Recommended CSS
+------------------------*/
+
+#recommendedBox {
+  margin-top: 4em;
+}
+
+#recommendedBox h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--brand-montserrat-fontFamily);
+  color: var(--brand-gray-color);
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+#recommendedBox img {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 1em;
+  transition: .3s;
+}
+
+#recommendedBox img:hover {opacity: .8;}
+
+#recommended button.primaryButton {
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 4em;
+}
+
+h3#recommendedProduct {
+  padding-bottom: .5em;
+  color: var(--brand-blue-color);
 }
 
 /*-----------------------
@@ -642,7 +856,7 @@ SHOP - Seals CSS
 }
 
 #shopSealContainer #sealsShop{
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 #shopSealContainer button {
@@ -657,6 +871,7 @@ CONTACT US - Forms CSS
 
 #contactUs {
   padding-top: 1em;
+  display: relative;
 }
 
 #contactUs h1 {
@@ -675,6 +890,10 @@ CONTACT US - Forms CSS
   display: block;
   width: 80%;
   margin-bottom: 2em;
+}
+
+#contactUs button.primaryButton {
+  padding: 16px 25px;
 }
 
 #contactUs #retailForm {
@@ -725,6 +944,61 @@ CONTACT US - Forms CSS
   font-weight: 600;
   color: var(--brand-gray-color);
   font-size: 20px;
+}
+
+#contactUs #contactInfo .infoCopy p {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 300;
+}
+
+#contactContainer {
+  position: relative;
+}
+
+#contactUs #resellerSupportForm,#contactUs #customerSupportForm {
+  background: var(--main-bgGray-color);
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+#contactUs #resellerSupportForm,#contactUs #customerSupportForm {
+  text-align: center;
+}
+
+#contactUs #resellerSupportForm h2,#contactUs #customerSupportForm h2 {
+color: var(--brand-gray-color);
+padding-bottom: 10px;
+}
+
+#contactUs #resellerSupportForm p,#contactUs #customerSupportForm p {
+padding-bottom: 30px;
+}
+
+#contactUs #customerSupportForm, #contactUs #resellerSupportForm {
+  position: absolute;
+  top: 0px;
+  left: -100%;
+}
+
+#contactUs #customerSupportForm .backToOptions, #contactUs #resellerSupportForm .backToOptions {
+  color: var(--brand-blue-color);
+  text-decoration: underline;
+}
+
+#contactUs #customerSupportForm .backToOptions h5:hover, #contactUs #resellerSupportForm .backToOptions h5:hover {cursor: pointer;}
+
+#contactUs #resellerSupportForm {
+  z-index: 3;
+}
+
+#contactUs #customerSupportForm {
+  z-index: 2;
+}
+
+#contactInfo {
+  position: relative;
 }
 
 #aboutMembersSubscriberForm {
@@ -895,4 +1169,636 @@ ABOUT US - Subscrober Form CSS
   width: 80%;
   display: block;
   margin: 0px auto;
+}
+
+/*-----------------------
+SHIPPING POLICY - CSS
+------------------------*/
+
+#shippingPolicy {
+  padding-bottom: 5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#shippingPolicy h1 {
+  padding-bottom: 1em;
+}
+
+#shippingPolicy h2 {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--brand-gray-color);
+  font-size: 24px;
+
+}
+
+#shippingPolicy h3 {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--brand-gray-color);
+  font-size: 20px;
+
+}
+
+#shippingPolicy p {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 300;
+}
+
+/*-----------------------
+REFUND POLICY - CSS
+------------------------*/
+
+#refundPolicy {
+  padding-bottom: 5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#refundPolicy h1 {padding-bottom: 1em;}
+
+#refundPolicy p {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 300;
+}
+
+/*-----------------------
+TERMS OF SERVICE - CSS
+------------------------*/
+
+#tos {
+  padding-bottom: 5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#tos h1 {padding-bottom: 1em;}
+
+#tos h2 {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--brand-gray-color);
+}
+
+#tos p {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 300;
+}
+
+/*-----------------------
+PRIVACY POLICY - CSS
+------------------------*/
+
+#privacyPolicy {
+  padding-bottom: 5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#privacyPolicy h1 {padding-bottom: 1em;}
+
+#privacyPolicy h2 {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--brand-gray-color);
+}
+
+#privacyPolicy p {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 350px) {
+  nav.navbar a.navbar-brand img {width: 200px;}
+
+  #ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+    font-size: 24px;
+  }
+
+  #footer ul#socialMediaList {
+    width: 200px;
+  }
+
+  #footer ul#socialMediaList img {
+    width: 90%;
+  }
+
+  #aboutCTA button.primaryButton {
+    width: 90px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 445px) {
+  #ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+    font-size: 30px;
+  }
+
+  #buttons {
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  button.primaryButton, button.secondaryButton {
+    width: 48%;
+    padding: 16px 24px;
+  }
+
+  #benefits .col-md-12 .primaryButton {width: 85%;}
+
+  #productsHomeCarousel .carousel-inner img {width: 70%;}
+
+  .benefitContainer .benefitBox img {width: 50%;}
+
+  #sealsContainer {width: 80%;}
+
+  #membersSubscriberForm form, #homeFormContent {
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #contactUs #infoContainer {
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  button.primaryButton, button.secondaryButton {
+    width: 42%;
+    margin: 0px 10px;
+  }
+
+  .benefitContainer .benefitBox img {width: 90%;}
+
+  #painReliefCarousel img {width: 60%;}
+
+  #painReliefCarousel .carousel-caption {bottom: -150px;}
+
+  nav ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 14px;
+  }
+
+  #contactUs #retailForm {background: none;}
+
+  #mission {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #control p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #benefitButton button.primaryButton{
+    display: block;
+    margin: 0px auto;
+    margin-top: 40px;
+    width: 70%;
+  }
+
+  #aboutBenefits .col-md-6 p {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #productBenefits {margin-bottom: 2em;}
+
+  #productBenefits img {width: 16.5%;}
+}
+
+@media screen and (min-width: 768px) {
+  #ATF {background-color: var(--main-bgGray-color);}
+
+  #atfContainer {
+    background-color: rgba(33,142,206,.8);
+    width: 500px;
+    display: block;
+    margin: 0px auto;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 20px;
+  }
+
+  #buttons {padding-bottom: 0px;}
+
+  #atfContainer h1 {
+    color: #fff;
+  }
+
+  #atfContainer button.primaryButton {
+    color: var(--brand-blue-color);
+    background: #fff;
+  }
+
+  .benefitContainer .benefitBox img {width: 60%;}
+
+  .benefitContainer button.secondaryButton {display: none}
+
+  #benefits .col-md-12 .primaryButton, #igFeed button.primaryButton {width: 385px;}
+
+  #benefits .closeOverlay {display: none;}
+
+  .benefitContainer .benefitBox img:hover {
+    cursor: pointer;
+  }
+
+  #productsHomeCarousel .carousel-inner img {width: 50%;}
+
+  .navbar-expand-md .navbar-collapse {
+    position: absolute;
+    right: 0px;
+  }
+
+  #productsHome {padding-bottom: 8em;}
+
+  #productsHome .carouselItem {
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #productsHome .carouselCaptionContent {
+    width: 90%;
+    position: absolute;
+    left: 0%;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+
+  #productsHome .carousel-item .carouselImage {
+    width: 50%;
+  }
+
+  #productsHome .carousel-item .carouselImage img {
+    width: 100%;
+  }
+
+  #productsHome .carousel-item .carousel-caption {
+    width: 50%;
+    position: relative;
+    left: 0%;
+    right: 0%;
+  }
+
+  #productsHomeCarousel .carousel-inner {height: 400px;}
+
+  #productsHomeCarousel .carousel-inner .carousel-caption {
+    bottom: 0px;
+  }
+
+  #sealsHome #sealsContainer {
+    width: 450px;
+    display: flex;
+    margin: 0px auto;
+    margin-top: 30px;
+  }
+
+  #sealsHome .seals {
+    margin-top: 20px;
+    width: 50%;
+  }
+
+  #sealsHome .seals img {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  #homeFormContent {width: 550px;}
+
+  #membersSubscriberForm form {width: 550px;}
+
+  #membersSubscriberForm p {padding: 15px 30px;}
+
+  #productDisplay h1 {padding-bottom: 1.5em;}
+
+  #productDisplay #roll-on {padding-top: 0px;}
+
+  #labTestedContainer h2 {padding-bottom: 1.5em;}
+
+  #labTestedContainer img {width: 90%;}
+
+  #sealsShop img {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  #footer {text-align: left;}
+
+  #footer ul#socialMediaList {
+    margin: 0px;
+    width: 150px;
+  }
+
+  #footer ul#socialMediaList img {
+    width: 80%;
+  }
+
+  #copyright img {width: 300px;}
+
+  #copyright p {
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  #footer #footerIcons {text-align: right;}
+
+  #footerButton {text-align: center; height: 100px;}
+
+  #footerButton button {top: 10%;}
+
+  #productDisplay img {width: 80%;}
+
+  #contactUs #retailForm {
+    padding-top: 0px;
+    background: none;
+  }
+
+  #contactUs h1 {padding-bottom: 1.5em;}
+  #contactUs button.primaryButton {padding: 16px 22px;}
+
+  #contactUs #contactInfo {padding-top: 3em;}
+
+  #contactUs #customerSupportForm form, #contactUs #resellerSupportForm form, #contactUs #customerSupportForm P, #contactUs #resellerSupportForm P {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #shippingPolicy, #privacyPolicy, #tos, #refundPolicy {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #mission {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #mission p {text-align: left;}
+
+  #control p {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #aboutBenefits #alternative {
+    margin-top: 0px;
+  }
+
+  #aboutBenefits .brandValueBox {
+    width: 350px;
+    height: 910px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #benefitButton button.primaryButton{
+    width: 360px;
+  }
+
+  #aboutMembersSubscriberForm p {
+    width: 550px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #aboutMembersSubscriberForm form {
+    width: 690px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #aboutCTA {
+    background-color: rgba(33,142,206,.8);
+    width: 500px;
+    display: block;
+    margin: 0px auto;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 20px;
+  }
+
+  #aboutCTA h1 {
+    color: #fff;
+  }
+
+  #aboutCTA button.primaryButton {
+    color: var(--brand-blue-color);
+    background-color: #fff;
+  }
+
+  #mission h2 {margin-top: 1.5em;}
+
+  #recommendedBox {
+    margin-top: 6em;
+  }
+
+  #recommendedBox h3 {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #recommendedBox img {
+    width: 50%;
+  }
+
+  #recommended button.primaryButton {
+    width: 360px;
+  }
+
+  .breadcrumb {
+    background: none;
+    padding-left: 0px;
+  }
+
+  #productDetail .input-group {
+    width: 200px;
+  }
+
+  #productDetail button.primaryButton {margin-left: 0px;}
+
+  #painReliefCarousel img {width: 36%;}
+
+  #painReliefCarousel .carousel-caption {bottom: -100px;}
+}
+
+@media screen and (min-width: 830px) {
+  .benefitContainer .benefitBox .overlay .closeOverlay{
+    bottom: 20px;
+  }
+
+  #aboutBenefits .brandValueBox {
+    width: 330px;
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #aboutBenefits .brandValueBox {
+    width: 330px;
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav.navbar a.navbar-brand img {width: 300px;}
+
+  #nav {height: 110px;}
+
+  .navbar {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .navbar-expand-md .navbar-collapse {
+    position: absolute;
+    right: 0px;
+  }
+
+  nav ul.navbar-nav li.nav-item a.nav-link {font-size: 18px;}
+
+  #atfContainer {
+    bottom: 10%;
+    width: 600px;
+  }
+
+  #ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+    font-size: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #membersSubscriberForm h1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #ATF h1 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .benefitContainer .benefitBox img {width: 50%;}
+
+  #painReliefCarousel img {width: 32%;}
+
+  #painReliefCarousel .carousel-caption {bottom: -100px;}
+
+  #benefits {padding-bottom: 8em;}
+
+  #productsHome {padding-top: 0px;}
+
+  #footer #footerIcons {text-align: center;}
+
+  #footer #footerIcons img {width: 10%;}
+
+  #shopSealContainer {margin-top: 0px;}
+
+  #labTestedContainer img {
+    width: 70%;
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+
+  #shopSealContainer #sealsShop {
+    width: 650px;
+    display: flex;
+    margin: 0px auto;
+  }
+
+  #shopSealContainer button.primaryButton {width: 385px;}
+
+  #aboutBenefits .brandValueBox {
+    width: 90%;
+    height: 850px;
+  }
+
+  #contactUs #infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+  }
+
+  #contactUs #contactInfo .infoBox {
+    width: 410px;
+    margin: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #aboutCTA {
+    width: 600px;
+  }
+
+  #aboutCTA h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #aboutBenefits .brandValueBox {
+    height: 800px;
+  }
+
+  #aboutCTA {
+    width: 700px;
+  }
+
+  #painReliefCarousel img {width: 32%;}
+
+  #painReliefCarousel .carousel-caption {bottom: -110px;}
+}
+
+@media screen and (min-width: 1220px) {
+  #atfContainer {
+    bottom: 20%;
+  }
+
+  #productsHomeCarousel .carousel-inner {height: 525px;}
+}
+
+@media screen and (min-width: 1400px) {
+  #atfContainer {
+    bottom: 30%;
+  }
+
+  #aboutCTA {
+    width: 800px;
+  }
 }
