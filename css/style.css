@@ -272,7 +272,7 @@ HOME - Benefits CSS
   height: 100%;
 }
 
-#painReliefCarousel {height: 100%;}
+#painReliefCarousel {height: 100%; position: relative;}
 
 #painReliefCarousel .carousel-inner {
   height: 100%;
@@ -289,10 +289,10 @@ HOME - Benefits CSS
 #painReliefCarousel h3 {color: #fff;}
 
 #painReliefDisplay span.closeOverlay {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  bottom: -75%;
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 /*-----------------------
