@@ -714,7 +714,10 @@ PRODUCT PAGE - Products CSS
   margin-bottom: 5em;
 }
 
-#productBenefits img {width: 25%;}
+#productBenefits img {
+  width: 25%;
+  height: 100%;
+}
 
 #productDetail .input-group {margin-bottom: 30px;}
 
