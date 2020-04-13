@@ -683,6 +683,7 @@ PRODUCT PAGE - Products CSS
 #productImages #imageThumbnails img {
   width: 25%;
   transition: .3s;
+  height: 100%;
 }
 
 #productImages #imageThumbnails img:hover {
@@ -907,6 +908,11 @@ CONTACT US - Forms CSS
   padding-bottom: 6em;
 }
 
+#contactUs #infoContainer {
+  display: block;
+  margin: 0px auto;
+}
+
 #contactUs #contactInfo .infoBox {
   width: 90%;
   margin: 0px auto;
@@ -970,10 +976,6 @@ CONTACT US - Forms CSS
 #contactUs #resellerSupportForm h2,#contactUs #customerSupportForm h2 {
 color: var(--brand-gray-color);
 padding-bottom: 10px;
-}
-
-#contactUs #resellerSupportForm p,#contactUs #customerSupportForm p {
-padding-bottom: 30px;
 }
 
 #contactUs #customerSupportForm, #contactUs #resellerSupportForm {
@@ -1113,9 +1115,13 @@ ABOUT US - Control CSS
 }
 
 #aboutBenefits button.primaryButton {
+  margin: 0px auto;
+  display: block;
   margin-top: 1.5em;
   padding-left: 20px;
   padding-right: 20px;
+  width: 80%;
+
 }
 
 /*-----------------------
@@ -1297,6 +1303,12 @@ PRIVACY POLICY - CSS
   #aboutCTA button.primaryButton {
     width: 90px;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  #productsHomeCarousel .carousel-inner {
+    height: 650px;
   }
 }
 
