@@ -710,7 +710,7 @@ PRODUCT PAGE - Products CSS
 #productBenefits {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-bottom: 5em;
 }
 
