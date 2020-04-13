@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+AOS.init();
+
 /*-----------------------
 Scroll On Click
 ------------------------*/
@@ -254,6 +256,22 @@ if (($(window).width() >= 400) && ($(window).width() <= 446)) {
     $('#customerForm').animate({opacity: "1"});
     $('#contactInfo').animate({paddingTop: "6em"});
   });
+}
+
+if ($(window).width() >= 768) {
+
+var sealsImg = document.querySelector('#sealsHome img');
+
+sealsImg.src = "imgs/athletes-are-in-it-together-desktop.png";
+
+
+  $("#shopLink").mouseover(function(){
+      $("#navImgs").slideDown(500);
+    });
+
+    $("#closeImgsLinks span").click(function(){
+        $("#navImgs").slideUp(500);
+      });
 }
 
 if (($(window).width() >= 446) && ($(window).width() <= 768)) {

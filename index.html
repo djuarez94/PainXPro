@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/czd1cvm.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div id="banner">
+      <div class="container">
+        <a href="#">
+          <p><b>Save More on Longer Discomfort Relief</b> with our <b>Monthly Triple Action Pain Relief Subscription</b> today!</p>
+        </a>
+      </div>
+    </div>
     <div class="container">
       <div id="nav">
         <nav class="navbar navbar-expand-md navbar-light">
@@ -27,7 +35,7 @@
                   <a class="nav-link active" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="shop.html">SHOP</a>
+                  <a id="shopLink" class="nav-link" href="shop.html">SHOP</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="http://painxprolab.com">LAB RESULTS</a>
@@ -43,12 +51,33 @@
         </nav>
       </div>
     </div>
-    <div class="container-fluid">
+    <div id="navImgs">
+      <div id="closeImgsLinks">
+        <span><b>X</b></span>
+      </div>
+      <div class="container">
+        <div id="navImgsContainer">
+          <a href="500MG-CBD-pain-relief-freeze-pump-painxpro.html">
+            <div class="navImageBox">
+              <img src="imgs/PainXPro-Pain-Relief-Freeze-Pump.png" alt="PainXPro-Pain-Relief-Freeze-Pump">
+              <h5>Freeze Pump</h5>
+            </div>
+          </a>
+          <a href="500MG-CBD-pain-relief-roll-on-painxpro.html">
+            <div class="navImageBox">
+              <img src="imgs/PainXPro-Pain-Relief-Roll-On.png" alt="PainXPro-Pain-Relief-Roll-On">
+              <h5>Roll On</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container-fluid">
       <div class="row" id="ATF">
         <div class="col-md-12">
           <img src="imgs/happy-mail-and-female-athletes.png" alt="PainXPro-improves-revovery-with-safe-and-natural-pain-reilief-leaving-you-with-a-smile">
-          <div id="atfContainer">
-            <h1>Improve Recovery With Safe &amp; Natural Pain Relief</h1>
+          <div data-aos="fade-up" data-aos-duration="1000" id="atfContainer">
+            <h1>Improve Recovery With A Safe Pain Relief</h1>
             <div id="buttons">
               <a href="shop.html">
                 <button class="primaryButton" type="button" name="button">Shop Now</button>
@@ -60,6 +89,93 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+      </ul> -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/happy-mail-and-female-athletes.png" alt="PainXPro-improves-revovery-with-safe-and-natural-pain-reilief-leaving-you-with-a-smile">
+          <div class="carousel-caption">
+            <h1>Improve Recovery With A Safe Pain Relief</h1>
+            <div id="buttons">
+              <a href="shop.html">
+                <button class="primaryButton" type="button" name="button">Shop Now</button>
+              </a>
+              <a id="scrollToBenefits" href="#benefits">
+                <button class="secondaryButton" type="button" name="button">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/elders-enjoying-a-discomfort-relief-lifestyle.png" alt="PainXPro-helps-elders-enjoying-a-discomfort-relief-lifestyle">
+          <div class="carousel-caption">
+            <h3>Pain Relief for All Legal Aged Athletic Performers</h3>
+            <div id="buttons">
+              <a href="shop.html">
+                <button class="primaryButton" type="button" name="button">Shop Now</button>
+              </a>
+              <a id="scrollToBenefits" href="#benefits">
+                <button class="secondaryButton" type="button" name="button">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/relief-for-parents-for-a-happier-family.png" alt="PainXPro-improves-revovery-for-parents-for-a-happier-family">
+          <div class="carousel-caption">
+            <h3>Pain Relief for Hardworking Parents</h3>
+            <div id="buttons">
+              <a href="shop.html">
+                <button class="primaryButton" type="button" name="button">Shop Now</button>
+              </a>
+              <a id="scrollToBenefits" href="#benefits">
+                <button class="secondaryButton" type="button" name="button">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/working-out-indoors.png" alt="PainXPro-improves-revovery-for-indoor-athletic-performers">
+          <div class="carousel-caption">
+            <h3>Pain Relief for Indoor Athletic Performers</h3>
+            <div id="buttons">
+              <a href="shop.html">
+                <button class="primaryButton" type="button" name="button">Shop Now</button>
+              </a>
+              <a id="scrollToBenefits" href="#benefits">
+                <button class="secondaryButton" type="button" name="button">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/relief-for-outdoor-atheltic-performers.png" alt="PainXPro-improves-revovery-for-outdoor-athletic-performers">
+          <div class="carousel-caption">
+            <h3>Pain Relief for Outdoor Athletic Performers</h3>
+            <div id="buttons">
+              <a href="shop.html">
+                <button class="primaryButton" type="button" name="button">Shop Now</button>
+              </a>
+              <a id="scrollToBenefits" href="#benefits">
+                <button class="secondaryButton" type="button" name="button">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
     <div id="benefits">
       <div class="container">
@@ -93,7 +209,7 @@
                 <div class="overlayContent">
                   <ul>
                     <li>Works almost immediately after application</li>
-                    <li>Penetrates skin and begins smoothing muscles and joints quickly</li>
+                    <li>Penetrates skin and begins soothing muscles and joints quickly</li>
                   </ul>
                   <span class="closeOverlay">X</span>
                 </div>
@@ -185,12 +301,12 @@
           <div class="col-sm-6 benefitContainer">
             <div class="benefitBox">
               <img src="imgs/recommended-icon.png" alt="recommended-icon">
-              <h3>Recommended</h3>
+              <h3>Expert Tested</h3>
               <button class="secondaryButton" type="button" name="button">Learn More</button>
               <div class="overlay">
                 <div class="overlayContent">
                   <ul>
-                    <li>Lab tested by experts</li>
+                    <li>Lab tested by Experts</li>
                     <li>FDA Registered</li>
                     <li>100% Money Back Guarantee</li>
                   </ul>
@@ -201,7 +317,7 @@
           </div>
           <div class="col-md-12">
             <a href="about-us.html">
-              <button class="primaryButton" type="button" name="button">Learn More About Our Brand</button>
+              <button data-aos="zoom-out-up" data-aos-duration="1000" class="primaryButton" type="button" name="button">Learn More About Our Brand</button>
             </a>
           </div>
         </div>
@@ -210,7 +326,7 @@
     <div class="container">
       <div class="row" id="productsHome">
         <div class="col-md-12">
-          <h1>Triple Action 500MG<br>CBD Pain Relief</h1>
+          <h1>Triple Action <span class="blueHighlight">500MG</span><br>CBD Pain Relief</h1>
         </div>
         <div id="productsHomeCarousel" class="carousel slide" data-ride="carousel" data-interval="6500">
           <ul class="carousel-indicators">
@@ -227,8 +343,8 @@
                   <div class="carouselCaptionContent">
                     <h3>Pain Relief<br>Freeze Pump</h3>
                     <p>Buy 2 or More and Save!</p>
-                    <a href="#">
-                      <button class="primaryButton" type="button" name="button">Save Now</button>
+                    <a href="500MG-CBD-pain-relief-freeze-pump-painxpro.html">
+                      <button data-aos="zoom-out-up" data-aos-duration="1000" class="primaryButton" type="button" name="button">Save Now</button>
                     </a>
                   </div>
                 </div>
@@ -243,8 +359,8 @@
                   <div class="carouselCaptionContent">
                     <h3>Pain Relief<br>Roll On</h3>
                     <p>Buy 2 or More and Save!</p>
-                    <a href="#">
-                      <button class="primaryButton" type="button" name="button">Save Now</button>
+                    <a href="500MG-CBD-pain-relief-roll-on-painxpro.html">
+                      <button data-aos="zoom-out-up" data-aos-duration="1000" class="primaryButton" type="button" name="button">Save Now</button>
                     </a>
                   </div>
                 </div>
@@ -274,16 +390,16 @@
           <img src="imgs/athletes-are-in-it-together-mobile.png" alt="painxpro-works-with-you-to-relieve-pain">
         </div>
         <div id="sealsContainer">
-          <div class="seals">
+          <div data-aos="fade-up" data-aos-duration="1000" class="seals">
             <img src="imgs/100-percent-money-back-guarantee-seal.png" alt="100-percent-money-back-guarantee-seal">
           </div>
-          <div class="seals">
+          <div data-aos="fade-up" data-aos-duration="1000" class="seals">
             <img src="imgs/good-manufacturing-practice-seal.png" alt="good-manufacturing-practice-seal">
           </div>
-          <div class="seals">
+          <div data-aos="fade-up" data-aos-duration="1000" class="seals">
             <img src="imgs/rated-number-1-recommended-seal.png" alt="rated-number-one-recommended-seal">
           </div>
-          <div class="seals">
+          <div data-aos="fade-up" data-aos-duration="1000" class="seals">
             <img src="imgs/formulated-in-the-usa-seal.png" alt="formulated-in-the-USA-seal">
           </div>
         </div>
@@ -308,7 +424,7 @@
                 <!-- <label for="pwd">Password:</label> -->
                 <input type="email" class="form-control" id="email" placeholder="Email" name="email">
               </div>
-              <button class="primaryButton" type="submit" class="btn btn-primary">Get My Exclusive Discount Now</button>
+              <button data-aos="zoom-out-up" data-aos-duration="1000" class="primaryButton" type="submit" class="btn btn-primary">Get My Exclusive Discount Now</button>
             </form>
           </div>
         </div>
@@ -332,7 +448,7 @@
           <img src="imgs/ig-post-4.jpg" alt="instagram-post-4">
         </div>
         <a href="#">
-          <button class="primaryButton" type="button" name="button">Follow @painxpro</button>
+          <button data-aos="zoom-out-up" data-aos-duration="1000"  class="primaryButton" type="button" name="button">Follow @painxpro</button>
         </a>
       </div>
     </div>
@@ -350,7 +466,7 @@
                   <li>Pain Relief Roll On</li>
                 </a>
                 <a href="http://painxprolab.com/">
-                  <li>Lab Results</li>
+                  <li>Laboratory Tests</li>
                 </a>
                 <a href="shipping-and-return-policy.html">
                   <li>Shipping &amp; Returns</li>
@@ -442,5 +558,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </html>
