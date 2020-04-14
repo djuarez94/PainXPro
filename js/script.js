@@ -430,7 +430,7 @@ if(qrCodeBtn){
 Box Packaging Reveal On Click
 ------------------------*/
 
-if ($(window).width() >= 768) {
+
 
   var freezePumpContainer = document.querySelector('#pump img');
   var pumpPckBtn = document.querySelector('#pumpPckBtn');
@@ -448,7 +448,7 @@ if ($(window).width() >= 768) {
         rollOnContainer.src = "imgs/PainXPro-Pain-Relief-Roll-On-Box-Packaging.png";
       });
     }
-}
+
 
 /*-----------------------
 Product Page - Product Thumbnails
