@@ -674,7 +674,7 @@ HOME - Footer CSS
   margin-top: 25px;
   width: 100%;
   height: 140px;
-	background: linear-gradient(180deg, rgba(159,159,159,.15) 10%, rgba(255,255,255,.3) 50%, rgba(159,159,159,.15) 90%);
+	background: linear-gradient(180deg, rgba(159,159,159,.15) 10%, rgba(255,255,255,.3) 50%);
   border: none;
 }
 

@@ -6,7 +6,7 @@ AOS.init();
 Scroll On Click
 ------------------------*/
 
-$("#scrollToTop, #scrollToBenefits").on('click', function(event) {
+$("#scrollToTop, #scrollToBenefits, #scrollToMission").on('click', function(event) {
   if (this.hash !== "") {
     event.preventDefault();
 
