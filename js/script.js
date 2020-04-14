@@ -261,8 +261,9 @@ if (($(window).width() >= 400) && ($(window).width() <= 446)) {
 if ($(window).width() >= 768) {
 
 var sealsImg = document.querySelector('#sealsHome img');
-
-sealsImg.src = "imgs/athletes-are-in-it-together-desktop.png";
+  if(sealsImg){
+      sealsImg.src = "imgs/athletes-are-in-it-together-desktop.png";
+  }
 
 
   $("#shopLink").mouseover(function(){
@@ -425,9 +426,70 @@ if(qrCodeBtn){
   }
 }
 
+/*-----------------------
+Box Packaging Reveal On Click
+------------------------*/
 
+if ($(window).width() >= 768) {
 
+  var freezePumpContainer = document.querySelector('#pump img');
+  var pumpPckBtn = document.querySelector('#pumpPckBtn');
+  var rollOnContainer = document.querySelector('#roll-on img');
+  var rollOnPckBtn = document.querySelector('#rollOnPckBtn');
 
+    if(freezePumpContainer){
+      pumpPckBtn.addEventListener("click", function() {
+        freezePumpContainer.src = "imgs/PainXPro-Pain-Relief-Freeze-Pump-Box-Packaging.png";
+      });
+    }
+
+    if(rollOnContainer){
+      rollOnPckBtn.addEventListener("click", function() {
+        rollOnContainer.src = "imgs/PainXPro-Pain-Relief-Roll-On-Box-Packaging.png";
+      });
+    }
+}
+
+/*-----------------------
+Product Page - Product Thumbnails
+------------------------*/
+
+var productThumbnails = document.querySelectorAll('#imageThumbnails img');
+var mainProductImg = document.getElementById('mainProductImg');
+
+var image = document.querySelector('.zoom');
+
+for(var i = 0; i < productThumbnails.length; i++) {
+    var anchor = productThumbnails[i];
+    anchor.onmouseover = function() {
+      mainProductImg.src = this.src;
+      image.style.backgroundImage = 'url("' + this.src + '")';
+    };
+}
+
+if(mainProductImg){
+  function zoom(e){
+    var zoomer = e.currentTarget;
+    e.offsetX ? offsetX = e.offsetX : offsetX = e.pageX;
+    e.offsetY ? offsetY = e.offsetY : offsetX = e.pageX;
+    x = offsetX/zoomer.offsetWidth*100;
+    y = offsetY/zoomer.offsetHeight*100;
+    zoomer.style.backgroundPosition = x + '% ' + y + '%';
+  }
+
+  var browserWidth = window.innerWidth;
+      if (browserWidth > 769) {
+        document.querySelector('.zoom').addEventListener('mousemove', function () {
+                  zoom(event);
+      });
+    } else {
+
+     var image = document.querySelector('.zoom');
+     image.classList.remove('zoom');
+     image.style.backgroundImage = "none";
+
+    }
+}
 
 
 
