@@ -674,7 +674,7 @@ HOME - Footer CSS
   margin-top: 25px;
   width: 100%;
   height: 140px;
-	background: linear-gradient(180deg, rgba(159,159,159,.15) 10%, rgba(255,255,255,.3) 50%);
+	background: linear-gradient(180deg, rgba(159,159,159,.15) 10%, rgba(255,255,255,.3) 90%);
   border: none;
 }
 
@@ -1088,7 +1088,22 @@ CONTACT US - Forms CSS
 #contactUs #resellerSupportForm h2,#contactUs #customerSupportForm h2 {
 color: var(--brand-gray-color);
 padding-bottom: 10px;
+font-family: var(--brand-montserrat-fontFamily);
+font-style: normal;
+font-weight: 600;
 }
+
+#contactUs #resellerSupportForm p,#contactUs #customerSupportForm p {
+font-family: var(--brand-montserrat-fontFamily);
+font-style: normal;
+font-weight: 300;
+}
+
+#contactUs #customerSupportForm .backToOptions h5, #contactUs #resellerSupportForm .backToOptions h5 {
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  }
 
 #contactUs #customerSupportForm, #contactUs #resellerSupportForm {
   position: absolute;
