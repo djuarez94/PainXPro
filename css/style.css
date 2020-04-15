@@ -245,7 +245,7 @@ HOME - ATF CSS
 }
 
 #demo .carousel-caption button.primaryButton {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #demo .carousel-caption h1 {
@@ -745,7 +745,7 @@ SHOP - Product Display CSS
 
 #productDisplay button.secondaryButton, #labTestedContainer button.secondaryButton  {
   margin: 0px auto;
-  margin-top: 30px;
+  margin-top: 15px;
   display: block;
   width: 80%;
 }
@@ -1453,7 +1453,7 @@ PRIVACY POLICY - CSS
 
 @media screen and (min-width: 350px) {
   #demo .carousel-caption {
-    bottom: -380px;
+    bottom: -360px;
   }
 
   nav.navbar a.navbar-brand img {width: 200px;}
@@ -1484,13 +1484,13 @@ PRIVACY POLICY - CSS
 
 @media screen and (min-width: 407px) {
   #demo .carousel-caption {
-    bottom: -400px;
+    bottom: -370px;
   }
 }
 
 @media screen and (min-width: 445px) {
   #demo .carousel-caption {
-    bottom: -350px;
+    bottom: -370px;
   }
 
   #demo .carousel-caption h1, #demo .carousel-caption h3 {
@@ -1728,7 +1728,7 @@ PRIVACY POLICY - CSS
     right: 0%;
   }
 
-  #productsHomeCarousel .carousel-inner {height: 400px;}
+  #productsHomeCarousel .carousel-inner {height: 350px;}
 
   #productsHomeCarousel .carousel-inner .carousel-caption {
     bottom: 0px;
@@ -1940,6 +1940,8 @@ PRIVACY POLICY - CSS
 }
 
 @media screen and (min-width: 830px) {
+  #productsHomeCarousel .carousel-inner {height: 450px;}
+
   .benefitContainer .benefitBox .overlay .closeOverlay{
     bottom: 20px;
   }
