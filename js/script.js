@@ -6,7 +6,7 @@ AOS.init();
 Scroll On Click
 ------------------------*/
 
-$("#scrollToTop, #scrollToBenefits, #scrollToMission, #retailSupportBtn, #rollOnPckBtn, #pumpPckBtn, #qrBtn").on('click', function(event) {
+$("#scrollToTop, #scrollToBenefits, #scrollToMission, #retailSupportBtn, #rollOnPckBtn, #pumpPckBtn, #qrBtn, #prevBtn, #nextBtn").on('click', function(event) {
   if (this.hash !== "") {
     event.preventDefault();
 
@@ -14,7 +14,7 @@ $("#scrollToTop, #scrollToBenefits, #scrollToMission, #retailSupportBtn, #rollOn
 
     $('html, body').animate({
       scrollTop: $(hash).offset().top
-    }, 800, function(){
+    }, 300, function(){
 
       window.location.hash = hash;
     });
