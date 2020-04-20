@@ -91,7 +91,7 @@ div.zoom img {
 
 span.blueHighlight {color: var(--brand-blue-color);}
 
-#ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+#ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #membersSubscriberForm h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
   color: var(--brand-gray-color);
   text-align: center;
   padding-top: 20px;
@@ -556,15 +556,6 @@ HOME - Subscriber Form CSS
   background-color: var(--main-bgGray-color);
   padding-top: 5em;
   padding-bottom: 6em;
-}
-
-#membersSubscriberForm h2 {
-  text-align: center;
-  font-family:var(--brand-montserrat-fontFamily);
-  font-weight: 600;
-  font-size: 32px;
-  font-style: normal;
-  color: var(--brand-gray-color);
 }
 
 #membersSubscriberForm p {
@@ -1181,15 +1172,6 @@ font-weight: 300;
   padding-bottom: 6em;
 }
 
-#aboutMembersSubscriberForm h2 {
-  text-align: center;
-  font-family:var(--brand-montserrat-fontFamily);
-  font-weight: 600;
-  font-size: 32px;
-  font-style: normal;
-  color: var(--brand-gray-color);
-}
-
 /*-----------------------
 ABOUT US - ATF CSS
 ------------------------*/
@@ -1218,15 +1200,6 @@ ABOUT US - Mission CSS
 #mission {
   text-align: center;
   padding-bottom: 4em;
-}
-
-#mission h2, #control h2 {
-  font-family: var(--brand-montserrat-fontFamily);
-  font-style: normal;
-  font-weight: 600;
-  color: var(--brand-gray-color);
-  padding-bottom: 15px;
-  text-align: center;
 }
 
 #mission p {
@@ -1492,7 +1465,7 @@ PRIVACY POLICY - CSS
 
   nav.navbar a.navbar-brand img {width: 200px;}
 
-  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
     font-size: 24px;
   }
 
@@ -1531,7 +1504,7 @@ PRIVACY POLICY - CSS
     font-size: 30px;
   }
 
-  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
     font-size: 30px;
   }
 
@@ -1785,11 +1758,11 @@ PRIVACY POLICY - CSS
     margin-bottom: 30px;
   }
 
-  #homeFormContent {width: 550px;}
+  #homeFormContent {width: 90%;}
 
   #membersSubscriberForm form {width: 550px;}
 
-  #membersSubscriberForm p {padding: 15px 30px;}
+  #membersSubscriberForm p {padding: 15px 140px;}
 
   #productDisplay h1 {padding-bottom: 1.5em;}
 
@@ -1936,8 +1909,6 @@ PRIVACY POLICY - CSS
     background-color: #fff;
   }
 
-  #mission h2 {margin-top: 1.5em;}
-
   #recommendedBox {
     margin-top: 6em;
   }
@@ -2021,7 +1992,7 @@ PRIVACY POLICY - CSS
     width: 600px;
   }
 
-  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #membersSubscriberForm h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
     font-size: 40px;
     padding-left: 10%;
     padding-right: 10%;
