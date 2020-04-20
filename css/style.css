@@ -1864,7 +1864,7 @@ PRIVACY POLICY - CSS
 
   #aboutBenefits .brandValueBox {
     width: 350px;
-    height: 1010px;
+    height: 1100px;
     display: block;
     margin: 0px auto;
   }
@@ -1952,14 +1952,14 @@ PRIVACY POLICY - CSS
 
   #aboutBenefits .brandValueBox {
     width: 330px;
-    height: 1050px;
+    height: 1190px;
   }
 }
 
 @media screen and (min-width: 900px) {
   #aboutBenefits .brandValueBox {
     width: 330px;
-    height: 1040px;
+    height: 1200px;
   }
 }
 
@@ -2035,7 +2035,7 @@ PRIVACY POLICY - CSS
 
   #aboutBenefits .brandValueBox {
     width: 90%;
-    height: 910px;
+    height: 980px;
   }
 
   #contactUs #infoContainer {
@@ -2075,7 +2075,7 @@ PRIVACY POLICY - CSS
   }
 
   #aboutBenefits .brandValueBox {
-    height: 850px;
+    height: 910px;
   }
 
   #aboutCTA {
@@ -2097,7 +2097,7 @@ PRIVACY POLICY - CSS
 
 @media screen and (min-width: 1400px) {
   #demo .carousel-caption {
-    bottom: 340px;
+    bottom: 230px;
   }
 
   #atfContainer {
