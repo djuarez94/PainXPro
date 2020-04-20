@@ -91,7 +91,7 @@ div.zoom img {
 
 span.blueHighlight {color: var(--brand-blue-color);}
 
-#ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+#ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
   color: var(--brand-gray-color);
   text-align: center;
   padding-top: 20px;
@@ -558,6 +558,15 @@ HOME - Subscriber Form CSS
   padding-bottom: 6em;
 }
 
+#membersSubscriberForm h2 {
+  text-align: center;
+  font-family:var(--brand-montserrat-fontFamily);
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  color: var(--brand-gray-color);
+}
+
 #membersSubscriberForm p {
   font-family: var(--brand-montserrat-fontFamily);
   text-align: center;
@@ -730,7 +739,7 @@ SHOP - Product Display CSS
 #productDisplay h3 {
   color: var(--brand-blue-color);
   text-align: center;
-  font-family:var(--brand-montserrat-fontFamily));
+  font-family:var(--brand-montserrat-fontFamily);
   font-weight: 800;
   font-size: 30px;
   font-style: normal;
@@ -766,7 +775,7 @@ SHOP - Lab Tested CSS
 
 #labTestedContainer h2 {
   text-align: center;
-  font-family:var(--brand-montserrat-fontFamily));
+  font-family:var(--brand-montserrat-fontFamily);
   font-weight: 600;
   font-size: 32px;
   font-style: normal;
@@ -1052,6 +1061,15 @@ CONTACT US - Forms CSS
   margin: 0px auto;
 }
 
+#contactUs #infoContainer a {
+  color: #212529;
+  transition: .3s;
+}
+
+#contactUs #infoContainer a:hover {opacity: .8;}
+
+#contactUs #infoContainer a p:hover {opacity: .8;}
+
 #contactUs #contactInfo .infoBox {
   width: 90%;
   margin: 0px auto;
@@ -1163,6 +1181,15 @@ font-weight: 300;
   padding-bottom: 6em;
 }
 
+#aboutMembersSubscriberForm h2 {
+  text-align: center;
+  font-family:var(--brand-montserrat-fontFamily);
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  color: var(--brand-gray-color);
+}
+
 /*-----------------------
 ABOUT US - ATF CSS
 ------------------------*/
@@ -1246,6 +1273,13 @@ ABOUT US - Control CSS
   padding-right: 20px;
   padding-bottom: 6em;
 }
+
+#aboutBenefits #disclaimerLink {
+  color: var(--brand-blue-color);
+  font-weight: 600;
+}
+
+#aboutBenefits #disclaimerLink:hover {cursor: pointer;}
 
 #aboutBenefits .col-md-6 {
   padding-left: 0px;
@@ -1458,7 +1492,7 @@ PRIVACY POLICY - CSS
 
   nav.navbar a.navbar-brand img {width: 200px;}
 
-  #ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
     font-size: 24px;
   }
 
@@ -1497,7 +1531,7 @@ PRIVACY POLICY - CSS
     font-size: 30px;
   }
 
-  #ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
     font-size: 30px;
   }
 
@@ -1827,7 +1861,7 @@ PRIVACY POLICY - CSS
   }
 
   #mission {
-    width: 600px;
+    width: 850px;
     display: block;
     margin: 0px auto;
   }
@@ -1849,7 +1883,6 @@ PRIVACY POLICY - CSS
   }
 
   #aboutBenefits .brandValueBox h2 {
-    /* width: 90%; */
     padding-left: 5px;
     padding-right: 5px;
     display: block;
@@ -1988,7 +2021,7 @@ PRIVACY POLICY - CSS
     width: 600px;
   }
 
-  #ATF h1, #benefits h1, #productsHome h1, #membersSubscriberForm h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutMembersSubscriberForm h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #contactUs h1, #aboutCTA h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
     font-size: 40px;
     padding-left: 10%;
     padding-right: 10%;

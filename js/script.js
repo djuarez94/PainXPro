@@ -6,7 +6,7 @@ AOS.init();
 Scroll On Click
 ------------------------*/
 
-$("#scrollToTop, #scrollToBenefits, #scrollToMission, #retailSupportBtn, #rollOnPckBtn, #pumpPckBtn, #qrBtn, #prevBtn, #nextBtn").on('click', function(event) {
+$("#scrollToTop, #scrollToBenefits, #scrollToMission, #retailSupportBtn, #prevBtn, #nextBtn").on('click', function(event) {
   if (this.hash !== "") {
     event.preventDefault();
 
@@ -20,6 +20,27 @@ $("#scrollToTop, #scrollToBenefits, #scrollToMission, #retailSupportBtn, #rollOn
     });
   }
 });
+
+if ($(window).width() <= 768) {
+  $("#rollOnPckBtn, #pumpPckBtn, #qrBtn").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
+} else {
+  $("#rollOnPckBtn, #pumpPckBtn, #qrBtn").on('click', function(event) {
+    event.preventDefault()
+  });
+}
 
 /*-----------------------
 Slide Overlay On Click
@@ -166,7 +187,7 @@ Contact Form Reveal
 ------------------------*/
 
 if ($(window).width() <= 369) {
-  $("#customerSupportBtn").click(function(){
+  $("#customerSupportBtn, #customerSupportIcon").click(function(){
     $("#customerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -176,7 +197,7 @@ if ($(window).width() <= 369) {
     $('#contactInfo').animate({paddingTop: "31em"});
   });
 
-  $("#retailSupportBtn").click(function(){
+  $("#retailSupportBtn, #retailIcon").click(function(){
     $("#resellerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -197,7 +218,7 @@ if ($(window).width() <= 369) {
 }
 
 if (($(window).width() >= 369) && ($(window).width() <= 400)) {
-  $("#customerSupportBtn").click(function(){
+  $("#customerSupportBtn, #customerSupportIcon").click(function(){
     $("#customerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -207,7 +228,7 @@ if (($(window).width() >= 369) && ($(window).width() <= 400)) {
     $('#contactInfo').animate({paddingTop: "26em"});
   });
 
-  $("#retailSupportBtn").click(function(){
+  $("#retailSupportBtn, #retailIcon").click(function(){
     $("#resellerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -228,7 +249,7 @@ if (($(window).width() >= 369) && ($(window).width() <= 400)) {
 }
 
 if (($(window).width() >= 400) && ($(window).width() <= 446)) {
-  $("#customerSupportBtn").click(function(){
+  $("#customerSupportBtn, #customerSupportIcon").click(function(){
     $("#customerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -238,7 +259,7 @@ if (($(window).width() >= 400) && ($(window).width() <= 446)) {
     $('#contactInfo').animate({paddingTop: "24em"});
   });
 
-  $("#retailSupportBtn").click(function(){
+  $("#retailSupportBtn, #retailIcon").click(function(){
     $("#resellerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -277,7 +298,7 @@ var sealsImg = document.querySelector('#sealsHome img');
 
 if (($(window).width() >= 446) && ($(window).width() <= 768)) {
 
-  $("#customerSupportBtn").click(function(){
+  $("#customerSupportBtn, #customerSupportIcon").click(function(){
     $("#customerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -287,7 +308,7 @@ if (($(window).width() >= 446) && ($(window).width() <= 768)) {
     $('#contactInfo').animate({paddingTop: "22em"});
   });
 
-  $("#retailSupportBtn").click(function(){
+  $("#retailSupportBtn, #retailIcon").click(function(){
     $("#resellerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -320,7 +341,7 @@ if ($(window).width() > 768) {
 }
 
 if (($(window).width() >= 768) && ($(window).width() <= 992 )) {
-  $("#customerSupportBtn").click(function(){
+  $("#customerSupportBtn, #customerSupportIcon").click(function(){
     $("#customerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -330,7 +351,7 @@ if (($(window).width() >= 768) && ($(window).width() <= 992 )) {
     $('#contactInfo').animate({paddingTop: "21em"});
   });
 
-  $("#retailSupportBtn").click(function(){
+  $("#retailSupportBtn, #retailIcon").click(function(){
     $("#resellerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -351,7 +372,7 @@ if (($(window).width() >= 768) && ($(window).width() <= 992 )) {
 }
 
 if (($(window).width() >= 992) && ($(window).width() <= 1200 )) {
-  $("#customerSupportBtn").click(function(){
+  $("#customerSupportBtn, #customerSupportIcon").click(function(){
     $("#customerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -361,7 +382,7 @@ if (($(window).width() >= 992) && ($(window).width() <= 1200 )) {
     $('#contactInfo').animate({paddingTop: "21em"});
   });
 
-  $("#retailSupportBtn").click(function(){
+  $("#retailSupportBtn, #retailIcon").click(function(){
     $("#resellerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -382,7 +403,7 @@ if (($(window).width() >= 992) && ($(window).width() <= 1200 )) {
 }
 
 if ($(window).width() >= 1200) {
-  $("#customerSupportBtn").click(function(){
+  $("#customerSupportBtn, #customerSupportIcon").click(function(){
     $("#customerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
@@ -392,7 +413,7 @@ if ($(window).width() >= 1200) {
     $('#contactInfo').animate({paddingTop: "19em"});
   });
 
-  $("#retailSupportBtn").click(function(){
+  $("#retailSupportBtn, #retailIcon").click(function(){
     $("#resellerSupportForm").animate({left: '0px'});
     $('#customerForm').animate({opacity: "0"});
     $('#retailForm').animate({opacity: "0"}, function() {
