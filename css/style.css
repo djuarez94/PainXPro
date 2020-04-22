@@ -91,7 +91,7 @@ div.zoom img {
 
 span.blueHighlight {color: var(--brand-blue-color);}
 
-#ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #membersSubscriberForm h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+#ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #blogHeader h1, #contactUs h1, #aboutCTA h1, #membersSubscriberForm h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
   color: var(--brand-gray-color);
   text-align: center;
   padding-top: 20px;
@@ -116,6 +116,20 @@ button.primaryButton {
   border: none;
   border-radius: 3px;
   padding: 16px 35px;
+  transition: .3s;
+  width: 80%;
+}
+
+button.primaryButtonWhite {
+  background-color: #fff;
+  color: var(--brand-blue-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  font-family: var(--brand-montserrat-fontFamily);
+  border: none;
+  border-radius: 3px;
+  padding: 16px 15px;
   transition: .3s;
   width: 80%;
 }
@@ -146,7 +160,13 @@ button.secondaryButton:hover {
 Navigation CSS
 ------------------------*/
 
-nav.navbar a.navbar-brand img {width: 90%;}
+nav.navbar a.navbar-brand img {
+  width: 90%;
+  display: block;
+  margin: 0px auto;
+}
+
+.navbar-brand {margin-right: 0px;}
 
 nav button.navbar-toggler {
   border: none;
@@ -1377,6 +1397,102 @@ SHIPPING POLICY - CSS
 }
 
 /*-----------------------
+BLOGS - CSS
+------------------------*/
+
+#blogs {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#blogHeader {
+  background-color: var(--main-bgGray-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#blogHeader h1 {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+#blogs h3 {padding-top: 25px;}
+
+#blogs img {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+}
+
+#blogs .col-sm-4 .benefitBox {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#blogs .benefitContainer .benefitBox .overlay {left: 0px;}
+
+#blogs button.primaryButtonWhite {
+  display: block;
+  margin: 0px auto;
+}
+
+#blogs .col-sm-4 .closeOverlay {display: block;}
+
+#blogs .benefitBox .closeOverlay {margin-top: 2em;}
+
+/*-----------------------
+BLOG POSTS - CSS
+------------------------*/
+
+#blogPost {
+  font-family: var(--brand-montserrat-fontFamily);
+}
+
+#blogPost h1 {
+  font-style: normal;
+  font-weight: 800;
+  color: var(--brand-gray-color);
+}
+
+#blogPost h3 {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--brand-gray-color);
+}
+
+#blogPost h4 {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--brand-gray-color);
+  transition: .3s;
+}
+
+#blogPost h4:hover {
+  color: #000;
+}
+
+#blogPost p {
+  font-style: normal;
+  font-weight: 300;
+}
+
+#blogPost img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.recommendedPostBox {padding-bottom: 25px;}
+
+.recommendedPostBox img {transition: .3s;}
+
+.recommendedPostBox img:hover {opacity: .8;}
+
+#blogPost .col-md-4 {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+/*-----------------------
 REFUND POLICY - CSS
 ------------------------*/
 
@@ -1465,7 +1581,7 @@ PRIVACY POLICY - CSS
 
   nav.navbar a.navbar-brand img {width: 200px;}
 
-  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #blogHeader h1,  #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
     font-size: 24px;
   }
 
@@ -1504,7 +1620,7 @@ PRIVACY POLICY - CSS
     font-size: 30px;
   }
 
-  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #blogHeader h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
     font-size: 30px;
   }
 
@@ -1619,6 +1735,10 @@ PRIVACY POLICY - CSS
 }
 
 @media screen and (min-width: 768px) {
+  #blogs .col-sm-4 .closeOverlay {display: none;}
+
+  nav.navbar a.navbar-brand img {width: 150px;}
+
   #demo {
     height: 100%;
     background: var(--main-bgGray-color);
@@ -1968,7 +2088,7 @@ PRIVACY POLICY - CSS
     font-size: 40px;
   }
 
-  nav.navbar a.navbar-brand img {width: 300px;}
+  nav.navbar a.navbar-brand img {width: 250px;}
 
   #nav {height: 110px;}
 
@@ -1992,7 +2112,13 @@ PRIVACY POLICY - CSS
     width: 600px;
   }
 
-  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #membersSubscriberForm h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+  #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #blogHeader h1, #contactUs h1, #aboutCTA h1, #membersSubscriberForm h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+    font-size: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #blogHeader h1 {
     font-size: 40px;
     padding-left: 10%;
     padding-right: 10%;

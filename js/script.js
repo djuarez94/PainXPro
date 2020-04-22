@@ -48,14 +48,21 @@ Slide Overlay On Click
 
 //get all Overlays
 var overlay = document.querySelectorAll('#benefits .overlay');
+var overlay2 = document.querySelectorAll('#blogs .overlay');
 
 //get all Overlay Close Buttons
 var overlayCloseButtons = document.querySelectorAll('.benefitBox .closeOverlay');
+var overlayCloseButtons2 = document.querySelectorAll('#blogs .benefitBox .closeOverlay');
 
 //loop thorugh all Overlay Close Buttons and then Slide Out Overlay function gets called
 for(var i = 0; i < overlayCloseButtons.length; i++) {
     var anchor = overlayCloseButtons[i];
     anchor.onclick = slideOutOverlay;
+}
+
+for(var i = 0; i < overlayCloseButtons2.length; i++) {
+    var anchor = overlayCloseButtons2[i];
+    anchor.onclick = slideOutOverlay2;
 }
 
 // Slide Out Overlay function
@@ -66,10 +73,24 @@ function slideOutOverlay() {
   }
 }
 
+function slideOutOverlay2() {
+  for(var i = 0; i < overlay2.length; i++) {
+      var anchor = overlay2[i];
+      this.parentNode.offsetParent.style.height = "0%";
+  }
+}
+
 //get all Learn More Buttons
 var learnMoreButton = document.querySelectorAll("#benefits .secondaryButton");
+var discoverMoreButton = document.querySelectorAll("#blogs .secondaryButton");
+// console.dir(discoverMoreButton);
 
 //loop thorugh all Learn More Buttons and then Slide In Overlay function gets called
+for(var i = 0; i < discoverMoreButton.length; i++) {
+    var anchor = discoverMoreButton[i];
+    anchor.onclick = slideInOverlay2;
+}
+
 for(var i = 0; i < learnMoreButton.length; i++) {
     var anchor = learnMoreButton[i];
     anchor.onclick = slideInOverlay;
@@ -79,6 +100,13 @@ for(var i = 0; i < learnMoreButton.length; i++) {
 function slideInOverlay() {
   for(var i = 0; i < overlay.length; i++) {
       var anchor = overlay[i];
+      this.nextElementSibling.style.height = "100%";
+  }
+}
+
+function slideInOverlay2() {
+  for(var i = 0; i < overlay2.length; i++) {
+      var anchor = overlay2[i];
       this.nextElementSibling.style.height = "100%";
   }
 }
