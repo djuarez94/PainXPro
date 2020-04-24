@@ -1222,7 +1222,12 @@ ABOUT US - ATF CSS
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: none;
 }
+
+#mobileImg {display: block;}
+
+#mobileImg img {width: 100%;}
 
 /*-----------------------
 ABOUT US - Mission CSS
@@ -1748,6 +1753,12 @@ PRIVACY POLICY - CSS
 }
 
 @media screen and (min-width: 768px) {
+  #mobileImg {display: none;}
+
+  .parallax {
+    display: block;
+  }
+
   #blogs .col-sm-4 .closeOverlay {display: none;}
 
   nav.navbar a.navbar-brand img {width: 150px;}
