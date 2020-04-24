@@ -1470,6 +1470,7 @@ BLOG POSTS - CSS
   font-style: normal;
   font-weight: 800;
   color: var(--brand-gray-color);
+  font-size: 24px;
 }
 
 #blogPost h3 {
@@ -1626,6 +1627,10 @@ PRIVACY POLICY - CSS
     font-size: 24px;
   }
 
+  #blogPost h1 {
+    font-size: 24px;
+  }
+
   #footer ul#socialMediaList {
     width: 200px;
   }
@@ -1662,6 +1667,10 @@ PRIVACY POLICY - CSS
   }
 
   #ATF h1, #benefits h1, #productsHome h1, #igFeed h1, #productDisplay h1, #aboutMembersSubscriberForm h1, #contactUs h1, #aboutCTA h1, #blogHeader h1, #mission h1, #control h1, #shippingPolicy h1, #refundPolicy h1, #tos h1, #privacyPolicy h1 {
+    font-size: 30px;
+  }
+
+  #blogPost h1 {
     font-size: 30px;
   }
 
@@ -2105,6 +2114,10 @@ PRIVACY POLICY - CSS
   #painReliefCarousel img {width: 36%;}
 
   #painReliefCarousel .carousel-caption {bottom: -100px;}
+
+  #blogPost h1 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (min-width: 830px) {
