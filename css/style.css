@@ -1515,6 +1515,12 @@ BLOG POSTS - CSS
   padding-bottom: 25px;
 }
 
+#blogPost #blogCopy img {
+  width: 50%;
+  display: block;
+  margin: 0px auto;
+}
+
 #blogPost h2 {
   font-style: normal;
   font-weight: 600;
