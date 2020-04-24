@@ -1510,6 +1510,23 @@ BLOG POSTS - CSS
   padding-left: 35px;
 }
 
+.copySection {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#blogPost h2 {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--brand-gray-color);
+}
+
+#blogPost h5 {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--brand-gray-color);
+}
+
 /*-----------------------
 REFUND POLICY - CSS
 ------------------------*/
