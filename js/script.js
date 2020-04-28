@@ -540,6 +540,32 @@ if(mainProductImg){
     }
 }
 
+/*-----------------------
+Hide Blog Titles
+------------------------*/
+
+var blogTitle = document.querySelectorAll('.blogText h3');
+var newBlogTitle = "";
+
+if ($(window).width() >= 768) {
+  if(blogTitle){
+
+    for(var i = 0; i < blogTitle.length; i++) {
+      var text = blogTitle[i];
+
+      if (text.innerHTML.length > 50) {
+        var newString = text.innerHTML;
+        text.innerHTML = newString.substring(0,46) + "...";
+      }
+    }
+  }
+
+}
+
+
+// var str = 'Some very long string';
+// if(str.length > 10) str = str.substring(0,9);
+// console.log(str);
 
 
 });
