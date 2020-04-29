@@ -156,6 +156,17 @@ button.secondaryButton:hover {
   opacity: .8;
 }
 
+#disclaimer p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--brand-montserrat-fontFamily);
+  text-align: center;
+  padding-top: 20px;
+  color: var(--brand-gray-color);
+  font-style: italic;
+}
+
 /*-----------------------
 Navigation CSS
 ------------------------*/
@@ -517,7 +528,6 @@ HOME - Product Carousel CSS
 #productsHomeCarousel button.primaryButton {
   width: 80%;
   margin-top: 10px;
-  margin-left: 0px;
 }
 
 /* #buttonContainer {
@@ -728,6 +738,9 @@ HOME - Footer CSS
   background: none;
   font-size: 34px;
   color: var(--brand-gray-color);
+  font-family: var(--brand-montserrat-fontFamily);
+  font-style: normal;
+  font-weight: 300;
 }
 
 #footerButton p {
@@ -818,6 +831,10 @@ SHOP - Lab Tested CSS
 /*-----------------------
 PRODUCT PAGE - Products CSS
 ------------------------*/
+
+#productDisplay #disclaimer p {
+  padding-top: 70px;
+}
 
 #productImages {
   padding-top: 20px;
@@ -963,6 +980,11 @@ PRODUCT PAGE - Recommended CSS
 
 #recommendedBox {
   margin-top: 4em;
+}
+
+#recommendedBox #disclaimer p {
+  padding-top: 0px;
+  padding-bottom: 6em;
 }
 
 #recommendedBox h3 {
@@ -1917,7 +1939,7 @@ MEDIA QUERIES - CSS
 @media screen and (min-width: 576px) {
   #demo button.primaryButton, #demo button.secondaryButton {
     width: 100%;
-    margin: 0px 10px;
+    /* margin: 0px 10px; */
   }
 
   button.primaryButton, button.secondaryButton {
