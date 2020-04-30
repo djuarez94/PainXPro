@@ -1257,7 +1257,8 @@ ABOUT US - Mission CSS
 
 #mission {
   text-align: center;
-  padding-bottom: 4em;
+  padding-bottom: 6em;
+  padding-top: 0px;
 }
 
 #mission p {
@@ -1329,6 +1330,11 @@ ABOUT US - Control CSS
   box-shadow: 0px 5px 8px rgba(200,200,200,.7);
   padding-bottom: 2em;
 }
+
+/* @media screen and (height: 960px) {
+  #aboutBenefits .brandValueBox {
+    height: 1200px;
+} */
 
 #aboutBenefits #alternative {
   margin-top: 3em;
@@ -2232,6 +2238,10 @@ MEDIA QUERIES - CSS
 
   #mission p {text-align: left;}
 
+  #mission {
+    padding-top: 6em;
+  }
+
   #control p {
     width: 600px;
     display: block;
@@ -2562,6 +2572,6 @@ MEDIA QUERIES - CSS
 
   #aboutCTA {
     width: 800px;
-    top: 30%;
+    top: 40%;
   }
 }
