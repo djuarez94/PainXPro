@@ -563,9 +563,4 @@ if ($(window).width() >= 768) {
 }
 
 
-// var str = 'Some very long string';
-// if(str.length > 10) str = str.substring(0,9);
-// console.log(str);
-
-
 });
